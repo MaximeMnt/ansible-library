@@ -3,7 +3,7 @@
 
   tasks: 
     - name: update apt packages
-      sudo: yes
+      become: yes
       apt:
         upgrade: yes
         update_cache: yes
